@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+package-lock.json
+frontend/package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env
+frontend/.env.local
+frontend/.env*.local
+
+# Hardhat files
+cache/
+artifacts/
+typechain-types/
+coverage/
+coverage.json
+*.log
+
+# Hardhat Ignition deployments
+ignition/deployments/chain-31337
+ignition/deployments/chain-84532
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+coverage/
+.nyc_output/
