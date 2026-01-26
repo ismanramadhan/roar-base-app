@@ -1,9 +1,16 @@
-// Contract addresses - Update these after deployment
-export const ROAR_CONTRACT_ADDRESS = "0xa8f5b5ddc67c5e5a2Fa53D9740eEA6EfDc1bAAB2"; // Update after deployment
-export const MOCK_IDRX_ADDRESS = "0x2B31Fc4AD4B928b56ca81eCD597e9676F390fF9E"; // Update after deployment
+// Contract addresses - Can be overridden via environment variables
+export const ROAR_CONTRACT_ADDRESS = 
+  process.env.NEXT_PUBLIC_ROAR_CONTRACT_ADDRESS || 
+  "0xa8f5b5ddc67c5e5a2Fa53D9740eEA6EfDc1bAAB2";
+
+export const MOCK_IDRX_ADDRESS = 
+  process.env.NEXT_PUBLIC_MOCK_IDRX_ADDRESS || 
+  "0x2B31Fc4AD4B928b56ca81eCD597e9676F390fF9E";
 
 // Base Sepolia Chain ID
 export const BASE_SEPOLIA_CHAIN_ID = 84532;
+
+// ... rest of the ABI remains the same
 
 // ROAR Contract ABI
 export const ROAR_ABI = [

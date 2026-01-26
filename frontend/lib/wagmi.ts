@@ -11,7 +11,9 @@ export const config = createConfig({
     }),
   ],
   transports: {
-    [baseSepolia.id]: http(),
+    [baseSepolia.id]: http(
+      process.env.NEXT_PUBLIC_BASE_SEPOLIA_RPC_URL || "https://sepolia.base.org"
+    ),
   },
 });
 
